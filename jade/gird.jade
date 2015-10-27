@@ -1,0 +1,131 @@
+extends includes/layout
+block selfheader
+  link(rel='stylesheet', href='static/css/index.min.css')
+block content
+  .wrapper
+    .unit-10 左侧导航
+    .unit-90  
+      h1(align="center") grid &#26629;&#26684;&#31995;&#32479;
+      hr
+      p
+        | &#21709;&#24212;&#24335;&#30340;&#26629;&#26684;&#31995;&#32479;&#25903;&#25345;PC&#12289;Mobile&#12290;&#25903;&#25345;&#27969;&#20307;&#24067;&#23616;&#65292;&#25903;&#25345;&#23884;&#22871;&#12290;
+        br
+        | &#20849;&#25552;&#20379;&#20004;&#31181;&#26629;&#26684;&#26041;&#24335;&#65306;
+        br
+        | 1. &#22522;&#20110;bootstrap&#30340;&#21709;&#24212;&#24335;&#26629;&#26684;&#21270;
+        br
+        | 2. &#23436;&#20840;&#27969;&#20307;&#30340;&#26629;&#26684;&#21270;&#65292;&#26356;&#21152;&#28789;&#27963;&#24182;&#25903;&#25345;&#23621;&#20013;
+      h2 &#22266;&#23450;&#23485;&#24230;&#30340;&#26629;&#26684;&#21270;
+      hr
+      p wrapper &#62; row &#62; col-xs-* 
+        .row.show-grid
+          .col-xs-4 .col-xs-4
+          .col-xs-4 .col-xs-4
+          .col-xs-4 .col-xs-4
+          .col-md-4 .col-md-1
+          .col-md-4 .col-md-1
+          .col-md-4 .col-md-1
+          .col-lg-4 .col-lg-4
+          .col-lg-4 .col-lg-4
+          .col-lg-4 .col-lg-4
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+        .row.show-grid
+          .col-sm-8 .col-md-8
+          .col-sm-4 .col-md-4
+        .row.show-grid
+          .col-md-4 .col-md-4
+          .col-md-4 .col-md-4
+          .col-md-4 .col-md-4
+        .row.show-grid
+          .col-md-6 .col-md-6
+          .col-md-6 .col-md-6
+      hr
+      h2 100%满屏的栅格化
+      .row.show-grid
+          .col-xs-4.col-lg-4 .col-xs-4
+          .col-xs-4.col-lg-4 .col-xs-4
+          .col-xs-4.col-lg-4 .col-xs-4
+          .col-md-1 .col-md-1
+          .col-md-4 .col-md-4
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+          .col-md-1 .col-md-1
+          .col-md-2 .col-md-2
+
+        .row.show-grid
+          .col-sm-8 .col-md-8
+          .col-sm-4 .col-md-4
+        .row.show-grid
+          .col-md-4 .col-md-4
+          .col-md-4 .col-md-4
+          .col-md-4 .col-md-4
+        .row.show-grid
+          .col-md-6 .col-md-6
+          .col-md-6 .col-md-6
+      h2 百分比的栅格系统 
+      p &#30001;&#20110;12&#26639;&#26629;&#26684;&#31995;&#32479;&#26377;&#19968;&#23450;&#30340;&#23616;&#38480;&#24615;&#65292;&#65288;&#22914;&#26524;&#26080;&#27861;&#21019;&#24314;5&#21015;&#31561;&#20998;&#30340;&#24067;&#23616;&#65289;&#25152;&#20197;&#21478;&#22686;&#21152;&#19968;&#22871;&#25353;&#27604;&#20363;&#25286;&#20998;&#30340;&#26629;&#26684;&#31995;&#32479;&#12290;&#20351;&#24067;&#23616;&#26356;&#21152;&#28789;&#27963;
+      hr
+      .griddemo
+        // 100
+        .row
+          .unit-100 100%
+        // 50
+        .row
+          .unit-50 50%
+          .unit-50 50%
+        // 10/90
+        .row
+          .unit-10 10%
+          .unit-90 90%
+        // 40/60
+        .row
+          .unit-40 40%
+          .unit-60 60%
+        // 35/65
+        .row
+          .unit-35 35%
+          .unit-65 65%
+        // 33/66
+        .row
+          .unit-33 33%
+          .unit-66 66%
+        // 33
+        .row
+          .unit-33 33%
+          .unit-33 33%
+          .unit-33 33%
+        // 30/70
+        .row
+          .unit-30 30%
+          .unit-70 70%
+        // 25/75
+        .row.padding
+          .unit-25 25%
+          .unit-75 75%
+        // 25
+        .row
+          .unit-25 25%
+          .unit-25 25%
+          .unit-25 25%
+          .unit-25 25%
+        // 20/80
+        .row
+          .unit-20 20%
+          .unit-80 80%
+        // 20
+        .row
+          .unit-20 20%
+          .unit-20 20%
+          .unit-20 20%
+          .unit-20 20%
+          .unit-20 20%
+        .row
+          .unit-30.pull-center .unit-30.pull-center 我是居中的
+        .row
+          .unit-20.unit-push-30  unit-20  unit-pull-30  我是左偏移30%
+
+

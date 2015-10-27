@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title 会唐前端框
+    meta(charset='utf-8')
+    meta(name="viewport" content="width=device-width,user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel='stylesheet', href='../../dist/css/ht-framework.css')
+    link(rel='stylesheet', href='../js/prettify.css')
+
+    link(rel='stylesheet', href='../../dist/css/demo.css')
+    block selfheader
+  body(onload="prettyPrint()")
+    include header
+    block content
+    include footer
+    script(src='http://cdn.bootcss.com/jquery/2.1.4/jquery.js')
+    script(src='../../dist/js/ht-framework.js')
+    block selffooter
+
+
+    

@@ -1,0 +1,98 @@
+//
+// Utility classes
+// --------------------------------------------------
+
+
+// Floats
+// -------------------------
+
+.clearfix {
+  .clearfix();
+}
+.center-block {
+  .center-block();
+}
+.pull-right {
+  float: right !important;
+}
+.pull-left {
+  float: left !important;
+}
+/* 必须为块级元素 才能居中，并且需要指定宽度*/
+.pull-center{
+  margin-right: auto;
+  margin-left:auto;
+  float:none
+}
+
+
+
+
+//padding & margin
+
+.padding-left{
+  padding-left: @default-padding !important;
+  }
+
+.padding-top{
+  padding-top: @default-padding !important;
+  }
+
+.padding-right{
+  padding-right: @default-padding!important;
+  }
+
+.padding-bottom{
+  padding-bottom: @default-padding!important;
+  }
+
+
+.margin-left{
+  margin-left: @default-margin
+  }
+
+.margin-top{
+  margin-top: @default-margin
+  }
+
+.margin-right{
+  margin-right: @default-margin
+  }
+
+.margin-bottom{
+  margin-bottom: @default-margin
+  }
+
+// Toggling content
+// -------------------------
+
+// Note: Deprecated .hide in favor of .hidden or .sr-only (as appropriate) in v3.0.1
+.hide {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+.invisible {
+  visibility: hidden;
+}
+.text-hide {
+  .text-hide();
+}
+
+
+// Hide from screenreaders and browsers
+//
+// Credit: HTML5 Boilerplate
+
+.hidden {
+  display: none !important;
+}
+
+
+// For Affix plugin
+// -------------------------
+
+.affix {
+  position: fixed;
+}

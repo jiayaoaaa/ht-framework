@@ -1,0 +1,192 @@
+// Grid system bootstrap的栅格系统 和 流体栅格系统。
+//
+// Generate semantic grid columns with these mixins.
+
+// Centered container element
+.wrapper-centered(@gutter: @grid-gutter-width) {
+  margin-right: auto;
+  margin-left: auto;
+/*  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);*/
+  &:extend(.clearfix all);
+}
+
+// Creates a wrapper for a series of columns
+.make-row(@gutter: @grid-gutter-width) {
+/*  margin-left:  (@gutter / -2);
+  margin-right: (@gutter / -2);*/
+  &:extend(.clearfix all);
+}
+
+// Generate the extra small columns
+.make-xs-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  float: left;
+  width: percentage((@columns / @grid-columns));
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+}
+.make-xs-column-offset(@columns) {
+  margin-left: percentage((@columns / @grid-columns));
+}
+.make-xs-column-push(@columns) {
+  left: percentage((@columns / @grid-columns));
+}
+.make-xs-column-pull(@columns) {
+  right: percentage((@columns / @grid-columns));
+}
+
+
+
+
+// Generate the small columns
+.make-sm-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-sm-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-offset(@columns) {
+  @media (min-width: @screen-sm-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-push(@columns) {
+  @media (min-width: @screen-sm-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-sm-column-pull(@columns) {
+  @media (min-width: @screen-sm-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the medium columns
+.make-md-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-md-min) {
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-offset(@columns) {
+  @media (min-width: @screen-md-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-push(@columns) {
+  @media (min-width: @screen-md-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-md-column-pull(@columns) {
+  @media (min-width: @screen-md-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+// Generate the large columns
+.make-lg-column(@columns; @gutter: @grid-gutter-width) {
+  position: relative;
+  min-height: 1px;
+  padding-left:  (@gutter / 2);
+  padding-right: (@gutter / 2);
+
+  @media (min-width: @screen-lg-min) {
+    sss:sss;
+    float: left;
+    width: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-offset(@columns) {
+  @media (min-width: @screen-lg-min) {
+    margin-left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-push(@columns) {
+  @media (min-width: @screen-lg-min) {
+    left: percentage((@columns / @grid-columns));
+  }
+}
+.make-lg-column-pull(@columns) {
+  @media (min-width: @screen-lg-min) {
+    right: percentage((@columns / @grid-columns));
+  }
+}
+
+
+//流体栅格系统
+
+/* =Grid
+-----------------------------------------------------------------------------*/
+.pull-center,centered {
+    float: none !important;
+    margin: 0 auto !important;
+}
+.width-100, .unit-100 { width: 100%;  }
+.width-90, .unit-90   { width: 90%; float: left;  }
+.width-80, .unit-80   { width: 80%;  float: left; }
+.width-75, .unit-75   { width: 75%;  float: left; }
+.width-70, .unit-70   { width: 70%;   float: left;}
+.width-66, .unit-66   { width: 66.666666666%; float: left;}
+.width-65, .unit-65   { width: 65%;  float: left; }
+.width-60, .unit-60   { width: 60%;   float: left;}
+.width-50, .unit-50   { width: 50%;  float: left; }
+.width-40, .unit-40   { width: 40%;   float: left;}
+.width-35, .unit-35   { width: 35%;  float: left; }
+.width-33, .unit-33   { width: 33.33333333333333%;float: left; }
+.width-30, .unit-30   { width: 30%;  float: left; }
+.width-25, .unit-25   { width: 25%;  float: left; }
+.width-20, .unit-20   { width: 20%;  float: left; }
+.width-10, .unit-10   { width: 10%;  float: left; }
+
+
+.column-push(@num) {
+  left: @num %;
+}
+
+
+.unit-push-90,
+.unit-push-80,
+.unit-push-75,
+.unit-push-70,
+.unit-push-66,
+.unit-push-65,
+.unit-push-60,
+.unit-push-50,
+.unit-push-40,
+.unit-push-35,
+.unit-push-33,
+.unit-push-30,
+.unit-push-25,
+.unit-push-20,
+.unit-push-10 {
+  position: relative;
+}
+
+.unit-push-90 { left:90%; }
+.unit-push-80 { left:80%; }
+.unit-push-75 { left:75%; }
+.unit-push-70 {left:70%; }
+.unit-push-66 { left:66%; }
+.unit-push-65 { left:65%; }
+.unit-push-60 {left:60%; }
+.unit-push-50 {left:50%; }
+.unit-push-40 { left:40%; }
+.unit-push-35 { left:35%; }
+.unit-push-33 {  left:33%; }
+.unit-push-30 {  left:30%; }
+.unit-push-25 {  left:25%; }
+.unit-push-20 {  left:20%; }
+.unit-push-10 { left:10%; }

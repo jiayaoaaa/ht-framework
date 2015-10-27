@@ -1,0 +1,66 @@
+extends includes/layout
+block content
+  .wrapper
+    .unit-20 左侧导航
+    .unit-80 
+      h1 Navigation 导航
+      p 快速创建导航
+      h2 水平Navbar
+      p 导航组件都依赖同一个 .nav 类，状态类也是共用的。改变修饰类可以改变样式。
+      hr
+      ul.nav
+            li 
+             a(href="#") home
+            li.active
+             a(href="#") menu1
+            li
+             a(href="#") menu2
+            li
+             a(href="#") menu3
+            li
+             a(href="#") menu4
+            li
+             a(href="#") menu5
+      hr
+      ul.nav.nav-pills
+            li 
+             a(href="#") home
+            li.active
+             a(href="#") menu1
+            li
+             a(href="#") menu2
+            li
+             a(href="#") menu3
+            li
+             a(href="#") menu4
+            li
+             a(href="#") menu5    
+      hr
+      h5 垂直 ul.nav.nav-vertical
+      ul.nav.nav-vertical
+            li 
+             a(href="#") home
+            li.active
+             a(href="#") menu1
+            li
+             a(href="#") menu2
+            li
+             a(href="#") menu3
+            li
+             a(href="#") menu4
+            li
+             a(href="#") menu5
+      pre.prettyprint
+          ul.nav.nav-vertical
+            li 
+             a(href="#") home
+            li.active
+             a(href="#") menu1
+            li
+             a(href="#") menu2
+            li
+             a(href="#") menu3
+            li
+             a(href="#") menu4
+            li
+             a(href="#") menu5

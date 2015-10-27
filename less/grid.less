@@ -1,0 +1,96 @@
+//
+// Grid system
+// --------------------------------------------------
+
+
+// Container widths
+//
+// 由于 container名字太火 容易起冲突，so named wrapper
+.w1200{
+  width: 1200px;
+    .wrapper-centered(); //居中
+
+}
+
+.w960{
+  width: 960px;
+    .wrapper-centered(); //居中
+
+}
+
+.wrapper {
+  .wrapper-centered(); //居中
+
+   @media (min-width: @screen-xs-min) {  
+    width:@container-xs;
+  }
+
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.wrapper-fluid {
+  .wrapper-centered();
+}
+
+
+// Row
+//
+// Rows contain and clear the floats of your columns.
+
+.row {
+  .make-row();
+}
+
+
+// Columns
+//
+// Common styles for small and large grid columns
+
+.make-grid-columns();
+
+
+// Extra small grid
+//
+// Columns, offsets, pushes, and pulls for extra small devices like
+// smartphones.
+
+
+
+.make-grid(xs);
+
+
+
+
+@media (min-width: @screen-sm-min) {
+  .make-grid(sm);
+}
+
+
+// Medium grid
+//
+// Columns, offsets, pushes, and pulls for the desktop device range.
+
+@media (min-width: @screen-md-min) {
+  .make-grid(md);
+}
+
+@media (min-width: @screen-lg-min) {
+  .make-grid(lg);
+}
+//大
+
+
