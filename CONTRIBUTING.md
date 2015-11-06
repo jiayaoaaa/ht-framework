@@ -1,22 +1,29 @@
 # Contributing to Bootstrap
 
-Looking to contribute something to Bootstrap? **Here's how you can help.**
+1.** css reset重定义浏览器默认样式
+2.** 框架 栅格系统 响应式栅格系统
+3.基础
+-3.1 排版 标题h1-h6 .fize10-40 .color
+-3.2 代码引用  code pre quote 
+-3.3 表格
+-3.4 表单
+-3.5 按钮
+-3.6 图片
+-3.7 动画
+-3.8 图标库
+4. JS组件
+-4.1 下拉菜单
+-4.2 对话框 弹出层
+-4.3 消息提醒
+-4.5 进度条 loading
+-4.6 折叠
 
-Please take a moment to review this document in order to make the contribution
-process easy and effective for everyone involved.
+5. CSS组件
 
-Following these guidelines helps to communicate that you respect the time of
-the developers managing and developing this open source project. In return,
-they should reciprocate that respect in addressing your issue or assessing
-patches and features.
+
 
 
 ## Using the issue tracker
-
-The [issue tracker](https://github.com/twbs/bootstrap/issues) is
-the preferred channel for [bug reports](#bug-reports), [features requests](#feature-requests)
-and [submitting pull requests](#pull-requests), but please respect the following
-restrictions:
 
 * Please **do not** use the issue tracker for personal support requests.  Stack
   Overflow ([`twitter-bootstrap-3`](http://stackoverflow.com/questions/tagged/twitter-bootstrap-3) tag) or [IRC](README.md#community) are better places to get help.
